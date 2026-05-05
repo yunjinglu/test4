@@ -21,9 +21,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          # 這裡的參數會覆蓋所有配置，強迫工具對接到正確的專案
           args: >
             -Dsonar.projectKey=yunjinglu_test4
             -Dsonar.organization=yunjinglu
             -Dsonar.sources=.
-            -Dsonar.php.exclusions=**/vendor/**
